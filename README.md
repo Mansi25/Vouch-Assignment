@@ -95,7 +95,7 @@ python manage.py migrate
 And navigate to http://127.0.0.1:8000
 
 ## Link 
-- The github repository link for the assignment can be found ([here](https://github.com/Mansi25/Cloudflare-summer-intern)).
+- The gdeployed app link for the assignment can be found ([here](https://twittetoplinks.herokuapp.com/)).
       
    
     
