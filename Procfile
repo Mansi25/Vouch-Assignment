@@ -1,1 +1,1 @@
-web: gunicorn MYTWITTER_ASSIGNMENT-MASTER.wsgi --log-file -
+web: gunicorn TwitterLink.wsgi --log-file -
