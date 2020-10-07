@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <title>Twitterr</title>
+    <link rel="icon" href="{% static 'images/twitterr.png' %}" type="image/png" sizes="16x16">
+  </head>
+  <body>
+    <div class="app">
+      <div class="bg"></div>
+
+      <form>
+        <img
+            src="{% static 'images/tw.png' %}"
+          />
+        <h2>Twitterr Login</h2>
+      </form>
+
+      <footer>
+        <button><a href="/login">Login</a></button>
+      </footer>
+    </div>
+  </body>
+</html>

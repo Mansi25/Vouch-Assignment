@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+    background-color : cyan;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color :white;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  
+  .button {
+    display: inline-block;
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  h2 {text-align: center;}
+      </style>
+</head>
+<body>
+
+<h2 >Top Domain</h2>
+{% block content %}
+{% if my_list %}
+		{% for t,c in my_list %}
+      <div class="card">
+          <h2 class="font-weight-bold mb-3 text-center mt-1 mb-4">{{t}}
+          </h2>
+          <div class="Developer"> Tweet count: {{c}}</div>
+      </div>
+  
+      {% endfor %}
+{% else %}
+     <div class="col-md-12">
+             <p>No Domain</p>
+       </div>
+ {% endif %}
+ {% endblock %}
+<br>
+    <p><a href="{% url 'Logout' %}" class="button">LogOut</a></p>
+</body>
+</html> 
