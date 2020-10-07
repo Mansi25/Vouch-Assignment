@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
-import django_heroku
 
 DEBUG=False
 from pathlib import Path
@@ -137,4 +136,3 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'app/static/'),
 )
 
-django_heroku.settings(locals())
