@@ -30,7 +30,7 @@ import environ
 env = environ.Env(
     DEBUG=(bool, False)
 )
-SECRET_KEY=env('SECRET_KEY')
+SECRET_KEY='ckir9+evt9mv9z_fnfjs6jd@a0i%if7ble#@$_2be0ofhpi9-s'
 # SECURITY WARNING: don't run with debug turned on in production!\
 ALLOWED_HOSTS = ['*']
 

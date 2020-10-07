@@ -12,8 +12,8 @@ env = environ.Env(
     DEBUG=(bool, False)
 )
 
-Consumer_Key=env('Consumer_Key')
-Consumer_Secret=env('Consumer_Secret')
+Consumer_Key='WCfsSffpEZoENEiCcmUpWu8vr'
+Consumer_Secret='qRJ8ywu2RMO8zqnqTBxJrPkxMMo4VSLCTCs6YzhCa2fxlmR2XF'
 # Create your views here.
 
 def api_obj(request):
