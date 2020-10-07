@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
-import dj_database_url
 import django_heroku
 
 DEBUG=False
@@ -85,11 +84,16 @@ WSGI_APPLICATION = 'TwitterLink.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'ciba',
-        }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd99377fbd1jj1a', 
+        'USER': 'qvmphnizfkntbg', 
+        'PASSWORD': '53f12e61c743f5320069273204376833889b3e67782cca453eaa6b20bfc337ef',
+        'HOST': 'ec2-23-20-70-32.compute-1.amazonaws.com', 
+        'PORT': '5432',
     }
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
